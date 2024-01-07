@@ -1,0 +1,169 @@
+Html é uma linguagem de marcação , ou seja, marca o que é cada coisa com as tags
+Ex: Titulo, paragrafo, imagem etc. Não é considerado uma linguagem de programação
+
+começando o código:
+
+<!DOCTYPE html> identifica que estamos trabalhando no arquivo html na versão 5 (ou seja, anteriormente tinha outras versões)
+
+<html></html>  diz que tudo que está dentro faz parte dessa tag, abertura e fechamento
+
+<head></head> elemento que contém metainformações sobre a página HTML (contém meta tags) - o que não é exatamente visivel  (cabeça)
+<title></title> Titulo da página
+<body></body> corpo do documento, recipiente para tudo o que for visivel (corpo)
+ <h1></h1> head 1, vai até h6, ou seja são tamanhos de título
+<p></p> paragrafo 
+<img> tag que não fecha pois precisa dar um endereço pra ela <img src="" alt=""> precisa usar uma propriedade que é o src="" (source) alt="" texto alternativo que descreve as imagens para caso o código quebre e também para acessibilidade
+como fica:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+    </head>
+    <body>
+
+        <h1>This is a Heading</h1>
+        <p>This is a paragraph.</p>
+
+    </body>
+</html>
+
+<!DOCTYPE html>
+Informa ao navegador que esse documento é do tipo HTML e sua versão. Quando está escrito apenas html, indica que é a mais recente...
+
+<html>
+Representa a raiz do documento, serve com um container que engloba todos os outros elementos HTML.
+
+<body>
+É onde fica todo o conteúdo de texto, imagem e vídeos, em que o usuário vê e interage, nele os conteúdos são estruturados pelas demais tags do HTML.
+
+<script>
+Esse elemento contém instruções de script ou aponta para um arquivo de script externo por meio do atributo src.
+
+<head>
+Compreende as informações do documento que serão interpretadas pelo navegador (metadados). Como por exemplo, título do documento, links para folhas de estilo etc.
+
+<meta>
+Define metadados, ou seja, informações sobre dados de um documento HTML. As <meta> tags vão dentro do elemento <head> e são usadas para especificar o conjunto de caracteres, o autor do documento, as configurações da janela de visualização etc.
+
+<link>
+É uma tag vazia, que contém apenas atributos e faz a relação do documento HTML com recursos externos, é comumente usado para vincular uma folha de estilo externa, também é usada para definir o favicon da página (ícone da aba do navegador), como outros recursos.
+
+<style>
+Essa tag é usada para declarar estilos (CSS) para um documento.
+
+Tags semânticas:   tags que possuem um significado, que dão sentido a informação de texto ao navegador e buscadores
+<header>
+<main>
+<footer>
+<section>
+<article>
+<aside>
+<nav>
+<ol>
+<ul>
+<li>
+
+Tags sem semântica: não possuem semântica não definem um significado para aquele texto
+
+<div>
+<span>  elemento em linha que atua como um container genérico para agrupar conteúdos de texto.
+<b>
+<i>
+
+Comentários: não modificam o programa executado e servem somente para ajudar a pessoa que está desenvolvendo a melhor organizar os seus códigos. Para comentar algum código no HTML você deve envolvê-lo entre <!-- Seu código aqui –>
+
+
+Elementos inline : podem ser exibidos em nível de bloco ou outros elementos inline. Eles ocupam somente a largura de seu conteúdo.
+
+<span>  elemento em linha que atua como um container genérico para agrupar conteúdos de texto.
+
+<br> Essa tag produz uma quebra de linha em um determinado ponto do documento.
+
+<a> define um hiperlink, que vincula páginas web, arquivos, endereços de emails, ligações na mesma página
+
+Ex.: <span>Clique <a href="https://www.google.com" target="blank">aqui</a> para ser redirecionado para a página do google.</span>
+
+<img loading="lazy"> Utilizada para colocar imagens no site, deve-se utilizar o atributo src, colocando entre as aspas o link ou caminho do arquivo.
+
+<audio> inserir áudios no site, tendo como principais atributos: src, recebendo como valor o link ou diretório do audio, controls caso queira que seja possível controlar o áudio, autoplay para definir que o áudio de tocar automaticamente quando entrar no site, type recebendo como valor o tipo do áudio.
+
+Elementos block level : ocupam todo o espaço do seu elemento pai (container).
+
+<header>
+Define o cabeçalho da página, geralmente no cabeçalho identificamos o site, com a logo.
+
+<main>
+Compreende o conteúdo principal do corpo da página.
+
+<footer>
+Define o final da página ou conteúdo, o rodapé, geralmente colocamos contatos, redes sociais, endereço, informações “institucionais” no geral.
+
+<section>
+Dentro do conteúdo principal, essa tag compreende uma seção da página.
+
+<article>
+Inclui um artigo da página, muito utilizado em blogs e páginas de criação de conteúdo, também indica o principal conteúdo de texto da página.
+
+<aside>
+Representa uma seção que faz referência a outro conteúdo da página, como uma definição, uma explicação extra, avisos, biografia do autor, ou seja um conteúdo complementar.
+
+<nav>
+Contempla o menu de navegação das páginas do site, e dentro inserimos a listas e links com a tag <a href=””></a>.
+
+<div>
+Assim como as outras tags, também funciona como um container, porém a grande diferença é que a div não tem valor semântico, é apenas uma divisão na página para fins de layout.
+
+<p>
+Representa um parágrafo.
+
+<h1>, <h2><h6>
+A família de cabeçalhos ou headings, define os títulos da página. Esse grupo de elementos possuem um alto valor semântico e uma organização hierárquica, indo de <h1> até <h6>, sendo o h1 de maior valor semântico e o h6 de menor valor semântico.
+
+<hr>
+Essa tag constrói uma linha horizontal entre elementos, representa semanticamente uma quebra de conteúdo.
+
+<video>
+Utilizada para inserir vídeos no site, a tag possui atributos como width recebendo como valor a largura do vídeo em pixels, height recebendo como valor a altura do video em píxeis, caso não for informada esses atributos, será utilizado a largura e altura padrão do vídeo, controls (quando presente nos permite controlar o video), src recebendo como valor o link ou diretório do arquivo de vídeo.
+
+Formulário
+
+<form>
+Essa tag indica que estamos iniciando um formulário, recebe como principais atributos method que recebe como valor o método http que esse formulário irá executar (get, post) e action que especifica para onde enviar os dados do formulário quando um formulário é enviado.
+
+<input>
+Um campo para que o usuário possa inserir algum texto, data, número, cor, etc… possui como principais atributos type, que recebe como valor o tipo do input.
+
+<textarea>
+Representa uma caixa de texto, útil quando você quer permitir ao usuário informar um texto extenso em formato livre, como um comentário ou formulário de retorno.
+
+<button>
+Um botão clicável, possui como principais atributos type, que caso receba submit como valor e esteja dentro de um formulário, irá submeter o formulário.
+
+<label>
+A tag label é importante para os campos de formulários. Ela especifica qual o "rótulo" do input (a que se refere o input, como por exemplo envolvê-la em um texto “Nome completo”), e ajuda na experiência do usuário durante a utilização e preenchimento do formulário.
+
+Atributos HTML são palavras especiais usadas dentro da tag de abertura para controlar o comportamento do elemento.
+
+class=”NomeDaClasse” Classes são como classificações de uma tag/elemento, para que no CSS estilizar uma tag específica, ou um conjunto de tags. Também é possível usar no JavaScript para selecionar uma tag específica.
+
+id=”NomeDoId”
+Identificar de forma única um elemento naquela página HTML... É utilizado para identificar destino de âncoras, labels e outras funcionalidades neste sentido.
+
+src=”Link ou diretório da mídia"
+Comumente utilizado para indicar para a tag qual arquivo ou mídia utilizar. Recebe valores como links (https://google.com/minhaimagem.jpeg) ou o nome de um arquivo já presente no projeto (/minhaimagem.jpeg).
+
+alt=”Texto alternativo”
+O atributo alt fornece informações alternativas para uma imagem se um usuário por algum motivo não puder visualizá-la (devido à conexão lenta, um erro no atributo src ou se o usuário usar um leitor de tela).
+
+href=”Url”
+Para a tag <a>, o atributo href especifica a URL da página para a qual o link vai.
+
+lang=”Linguagem”
+O atributo lang especifica o idioma do conteúdo da tag.
+
+Os exemplos comuns são "en" para inglês, "es" para espanhol, "fr" para francês e assim por diante.
+
+target=”blank”
+Esse atributo abre o link do documento em uma nova janela ou aba.
+
