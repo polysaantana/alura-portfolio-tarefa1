@@ -14,7 +14,7 @@ Desenvolvimento web visualização em desktop.
 https://polysaantana.github.io/alura-portfolio-tarefa1/
 
 <div align="center">
-  <img src="img/porfofio.png" alt="portfolio"/>
+  <img src="img/porfofio.PNG" alt="portfolio"/>
 </div>
 
 
