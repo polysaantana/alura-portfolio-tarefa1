@@ -1,9 +1,0 @@
-Folhas de estilo em cascata
-
-CSS descreve como os elementos HTML devem ser exibidos na tela, no papel ou em outras mídias
-
-Pode controlar layout de v´rias páginas web de uma só vez
-
-Folhas de estilo externas são armazenadas em arquivos CSS
-
-#EB3AFC
